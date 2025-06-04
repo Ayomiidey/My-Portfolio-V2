@@ -9,13 +9,13 @@ const skills = [
     icon: Code,
     title: "Frontend Development",
     description:
-      "React, Angular, Next.js, TypeScript, JavaScript, Tailwind CSS, CSS, HTML",
+      "React, Angular, TypeScript, JavaScript, Tailwind CSS, CSS, HTML",
     color: "from-blue-500 to-cyan-500",
   },
   {
     icon: Zap,
     title: "Backend Development",
-    description: "Node.js, PostgreSQL, MongoDB",
+    description: " Next.js, Node.js, PostgreSQL, MongoDB",
     color: "from-green-500 to-emerald-500",
   },
   {

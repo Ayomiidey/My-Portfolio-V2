@@ -3,9 +3,9 @@
 import { motion } from "framer-motion";
 import {
   Globe,
-  Smartphone,
+  // Smartphone,
   Database,
-  Paintbrush,
+  // Paintbrush,
   Rocket,
   Shield,
 } from "lucide-react";
@@ -25,40 +25,35 @@ const services = [
     ],
     color: "from-blue-500 to-cyan-500",
   },
-  {
-    icon: Smartphone,
-    title: "Mobile Development",
-    description:
-      "Native and cross-platform mobile applications for iOS and Android platforms.",
-    features: [
-      "React Native",
-      "Flutter",
-      "Native iOS/Android",
-      "Progressive Web Apps",
-    ],
-    color: "from-green-500 to-emerald-500",
-  },
+  // {
+  //   icon: Smartphone,
+  //   title: "Mobile Development",
+  //   description:
+  //     "Native and cross-platform mobile applications for iOS and Android platforms.",
+  //   features: [
+  //     "React Native",
+  //     "Flutter",
+  //     "Native iOS/Android",
+  //     "Progressive Web Apps",
+  //   ],
+  //   color: "from-green-500 to-emerald-500",
+  // },
   {
     icon: Database,
     title: "Backend Development",
     description:
       "Scalable server-side solutions with robust APIs and database architecture.",
-    features: [
-      "RESTful APIs",
-      "GraphQL",
-      "Database Design",
-      "Cloud Integration",
-    ],
+    features: ["RESTful APIs", "Database Design", "Cloud Integration"],
     color: "from-purple-500 to-pink-500",
   },
-  {
-    icon: Paintbrush,
-    title: "UI/UX Design",
-    description:
-      "User-centered design solutions that create engaging and intuitive experiences.",
-    features: ["User Research", "Wireframing", "Prototyping", "Design Systems"],
-    color: "from-orange-500 to-red-500",
-  },
+  // {
+  //   icon: Paintbrush,
+  //   title: "UI/UX Design",
+  //   description:
+  //     "User-centered design solutions that create engaging and intuitive experiences.",
+  //   features: ["User Research", "Wireframing", "Prototyping", "Design Systems"],
+  //   color: "from-orange-500 to-red-500",
+  // },
   {
     icon: Rocket,
     title: "Performance Optimization",
