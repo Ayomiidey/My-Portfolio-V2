@@ -53,7 +53,7 @@ export function Navigation() {
               whileHover={{ scale: 1.05 }}
               className="bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent"
             >
-              John Doe
+              Quadri Alarape
             </motion.span>
           </Link>
 
@@ -154,7 +154,6 @@ export function Navigation() {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         <AnimatePresence>
           {isOpen && (
             <motion.div

@@ -8,19 +8,20 @@ const skills = [
   {
     icon: Code,
     title: "Frontend Development",
-    description: "React, Next.js, TypeScript, Tailwind CSS",
+    description:
+      "React, Angular, Next.js, TypeScript, JavaScript, Tailwind CSS, CSS, HTML",
     color: "from-blue-500 to-cyan-500",
   },
   {
     icon: Zap,
     title: "Backend Development",
-    description: "Node.js, Python, PostgreSQL, MongoDB",
+    description: "Node.js, PostgreSQL, MongoDB",
     color: "from-green-500 to-emerald-500",
   },
   {
     icon: Palette,
     title: "UI/UX Design",
-    description: "Figma, Adobe Creative Suite, Prototyping",
+    description: "Figma",
     color: "from-purple-500 to-pink-500",
   },
   {
@@ -32,9 +33,9 @@ const skills = [
 ];
 
 const stats = [
-  { icon: Award, label: "Projects Completed", value: "50+" },
-  { icon: Coffee, label: "Years Experience", value: "5+" },
-  { icon: Users, label: "Happy Clients", value: "20+" },
+  { icon: Award, label: "Projects Completed", value: "10+" },
+  { icon: Coffee, label: "Years Experience", value: "3+" },
+  { icon: Users, label: "Happy Clients", value: "10+" },
   { icon: Code, label: "Lines of Code", value: "100K+" },
 ];
 
@@ -56,7 +57,7 @@ export function AboutSection() {
             </span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            I&apos;m a passionate full-stack developer with 5+ years of
+            I&apos;m a passionate full-stack developer with 3+ years of
             experience creating digital experiences that make a difference. I
             love turning complex problems into simple, beautiful solutions that
             users love to interact with.
@@ -113,9 +114,9 @@ export function AboutSection() {
             </p>
             <p className="text-muted-foreground leading-relaxed">
               When I&apos;m not coding, you&apos;ll find me exploring new
-              technologies, contributing to open source projects, mentoring
-              junior developers, or sharing knowledge with the developer
-              community through blogs and talks.
+              technologies, contributing to open source projects, playing chess,
+              or sharing knowledge with the developer community through blogs
+              and talks.
             </p>
           </div>
 
