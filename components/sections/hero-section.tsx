@@ -29,7 +29,7 @@ export function HeroSection() {
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-red-500 to-pink-500 p-1 mb-6">
               <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
                 <span className="text-4xl font-bold bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent">
-                  JD
+                  QA
                 </span>
               </div>
             </div>
@@ -43,7 +43,7 @@ export function HeroSection() {
           >
             <span className="text-foreground">Hi, I&apos;m </span>
             <span className="bg-gradient-to-r from-red-500 via-pink-500 to-red-600 bg-clip-text text-transparent">
-              John Doe
+              Quadri Alarape
             </span>
             <br />
             <span className="text-2xl md:text-4xl lg:text-5xl text-muted-foreground font-medium">
