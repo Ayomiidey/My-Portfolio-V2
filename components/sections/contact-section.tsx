@@ -114,7 +114,12 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Email</h3>
-                    <p className="text-muted-foreground">john@example.com</p>
+                    <a
+                      href="mailto:quadriayomidey@gmail.com"
+                      className="text-muted-foreground"
+                    >
+                      quadriayomidey@gmail.com
+                    </a>
                   </div>
                 </div>
               </CardContent>
@@ -128,7 +133,12 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Phone</h3>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                    <a
+                      href="tel:+2348116475929"
+                      className="text-muted-foreground"
+                    >
+                      +234 811-647-5929
+                    </a>
                   </div>
                 </div>
               </CardContent>
@@ -142,7 +152,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Location</h3>
-                    <p className="text-muted-foreground">San Francisco, CA</p>
+                    <p className="text-muted-foreground">Lagos, Nigeria</p>
                   </div>
                 </div>
               </CardContent>
@@ -162,13 +172,12 @@ export function ContactSection() {
               </CardContent>
             </Card>
 
-            {/* Social Media Links */}
             <Card className="bg-background/60 backdrop-blur-sm border-border/60 hover:border-red-500/50 hover:bg-background/80 transition-all duration-300">
               <CardContent className="p-6">
                 <h3 className="font-semibold text-lg mb-4">Connect With Me</h3>
                 <div className="flex space-x-4">
                   <motion.a
-                    href="https://github.com/yourusername"
+                    href="https://github.com/Ayomiidey"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1 }}
@@ -178,7 +187,7 @@ export function ContactSection() {
                     <Github className="w-5 h-5 text-white" />
                   </motion.a>
                   <motion.a
-                    href="https://linkedin.com/in/yourusername"
+                    href="https://linkedin.com/in/quadri-alarape"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1 }}
@@ -202,7 +211,6 @@ export function ContactSection() {
             </Card>
           </motion.div>
 
-          {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
