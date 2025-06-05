@@ -13,6 +13,15 @@ export function HeroSection() {
     }
   };
 
+  const downloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "/cv/john-doe-cv.pdf"; // Place your CV in public/cv/ folder
+    link.download = "John_Doe_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="relative min-h-screen flex items-center justify-center px-4 pt-16">
       <div className="max-w-5xl mx-auto text-center">
@@ -89,7 +98,12 @@ export function HeroSection() {
             >
               Get In Touch
             </Button>
-            <Button variant="ghost" size="lg" className="px-8">
+            <Button
+              variant="ghost"
+              size="lg"
+              className="px-8"
+              onClick={downloadCV}
+            >
               <Download className="w-4 h-4 mr-2" />
               Download CV
             </Button>
