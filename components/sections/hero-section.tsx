@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -28,9 +29,13 @@ export function HeroSection() {
           >
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-red-500 to-pink-500 p-1 mb-6">
               <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
-                <span className="text-4xl font-bold bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent">
-                  QA
-                </span>
+                <Image
+                  src="/images/quadri.jpg"
+                  alt="Profile picture"
+                  width={128}
+                  height={128}
+                  className="rounded-full object-cover w-full h-full"
+                />
               </div>
             </div>
           </motion.div>

@@ -11,26 +11,26 @@ import Image from "next/image";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "E-Commerce App",
     description:
-      "A full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
-    image: "/placeholder.svg?height=300&width=500",
+      "A full-stack e-commerce app with payment integration, and admin dashboard.",
+    image: "/images/pac8.png",
     tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
     category: "Full Stack",
     github: "https://github.com",
-    live: "https://example.com",
-    featured: true,
+    live: "https://pac8.vercel.app",
+    featured: false,
   },
   {
     id: 2,
-    title: "Task Management App",
+    title: "Smart Inventory App",
     description:
       "A collaborative task management application with real-time updates and team collaboration features.",
-    image: "/placeholder.svg?height=300&width=500",
-    tags: ["React", "Node.js", "Socket.io", "MongoDB"],
+    image: "/images/restockr.png",
+    tags: ["NextJs", "PostgreSQL", "Blob", "Prisma"],
     category: "Full Stack",
     github: "https://github.com",
-    live: "https://example.com",
+    live: "https://restockr.vercel.app",
     featured: true,
   },
   {
@@ -74,7 +74,7 @@ const projects = [
     title: "Mobile App UI",
     description:
       "A modern mobile app interface design with intuitive user experience and micro-interactions.",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/placeholder.sv?height=300&width=500",
     tags: ["Figma", "Prototyping", "UI/UX"],
     category: "Design",
     github: "https://github.com",
