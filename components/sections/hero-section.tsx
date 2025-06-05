@@ -15,8 +15,8 @@ export function HeroSection() {
 
   const downloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/cv/john-doe-cv.pdf"; // Place your CV in public/cv/ folder
-    link.download = "John_Doe_CV.pdf";
+    link.href = "/cv/quadri-cv.pdf";
+    link.download = "Quadri-Alarape_CV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
