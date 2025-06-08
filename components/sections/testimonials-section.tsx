@@ -8,37 +8,37 @@ import Image from "next/image";
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Johnson",
+    name: "Aina Kolade",
     role: "CEO, TechStart Inc.",
     content:
-      "John delivered an exceptional e-commerce platform that exceeded our expectations. His attention to detail and technical expertise made our project a huge success.",
+      "Quadri delivered an exceptional e-commerce platform that exceeded our expectations. His attention to detail and technical expertise made our project a huge success.",
     rating: 5,
     avatar: "/placeholder.svg?height=60&width=60",
   },
   {
     id: 2,
-    name: "Michael Chen",
+    name: "Michael Olumuyiwa",
     role: "Product Manager, InnovateCorp",
     content:
-      "Working with John was a pleasure. He understood our requirements perfectly and delivered a scalable solution on time and within budget.",
+      "Working with Quadri was a pleasure. He understood our requirements perfectly and delivered a scalable solution on time and within budget.",
     rating: 5,
     avatar: "/placeholder.svg?height=60&width=60",
   },
   {
     id: 3,
-    name: "Emily Rodriguez",
+    name: "Jaji Moshood",
     role: "Founder, CreativeStudio",
     content:
-      "John's design skills and development expertise helped us create a stunning portfolio website that perfectly represents our brand.",
+      "Quadri's design skills and development expertise helped us create a stunning portfolio website that perfectly represents our brand.",
     rating: 5,
     avatar: "/placeholder.svg?height=60&width=60",
   },
   {
     id: 4,
-    name: "David Thompson",
+    name: "Chinedu Isaiah",
     role: "CTO, DataFlow Systems",
     content:
-      "The API service John built for us is robust, well-documented, and has been running flawlessly for over a year. Highly recommended!",
+      "The API service Quadri built for us is robust, well-documented, and has been running flawlessly for over a year. Highly recommended!",
     rating: 5,
     avatar: "/placeholder.svg?height=60&width=60",
   },
