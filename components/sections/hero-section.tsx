@@ -34,7 +34,7 @@ export function HeroSection() {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="mb-8"
+            className="mb-4"
           >
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-red-500 to-pink-500 p-1 mb-6">
               <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
@@ -116,7 +116,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 1 }}
           >
             <motion.a
-              href="https://github.com"
+              href="https://github.com/Ayomiidey"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -2 }}
@@ -126,7 +126,7 @@ export function HeroSection() {
               <Github className="w-6 h-6" />
             </motion.a>
             <motion.a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/quadri-alarape"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -2 }}
