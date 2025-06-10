@@ -136,7 +136,7 @@ export function HeroSection() {
               <Linkedin className="w-6 h-6" />
             </motion.a>
             <motion.a
-              href="mailto:john@example.com"
+              href="mailto:quadriayomidey@gmail.com"
               whileHover={{ scale: 1.1, y: -2 }}
               whileTap={{ scale: 0.95 }}
               className="p-4 rounded-full bg-background/60 backdrop-blur-sm border border-border/60 hover:border-red-500/50 hover:bg-red-500/10 transition-all duration-300"
