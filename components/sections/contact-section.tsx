@@ -43,14 +43,15 @@ export function ContactSection() {
         from_email: formData.email,
         subject: formData.subject,
         message: formData.message,
-        to_name: "John Doe", // Your name
+        to_name: "Quadri Alarape",
+        time: new Date().toLocaleString(),
       };
 
       await emailjs.send(
-        "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
+        process.env.NEXT_PUBLIC_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID!,
         templateParams,
-        "YOUR_PUBLIC_KEY" // Replace with your EmailJS public key
+        process.env.NEXT_PUBLIC_PUBLIC_KEY!
       );
 
       toast.success("Message sent successfully! I'll get back to you soon.");
@@ -73,6 +74,12 @@ export function ContactSection() {
       [e.target.name]: e.target.value,
     }));
   };
+
+  console.log("ENV VARS", {
+    service: process.env.NEXT_PUBLIC_SERVICE_ID,
+    template: process.env.NEXT_PUBLIC_TEMPLATE_ID,
+    publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
+  });
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 py-20 overflow-x-hidden">
