@@ -13,9 +13,9 @@ const projects = [
     id: 1,
     title: "E-Commerce App",
     description:
-      "A full-stack e-commerce app with payment integration, and admin dashboard.",
+      "A modern full-stack e-commerce application featuring product management, secure authentication, dynamic cart with Redux, and Stripe payment integration.",
     image: "/images/pac8.png",
-    tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
+    tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL", "Redux", "Prisma"],
     category: "Full Stack",
     github: "https://github.com",
     live: "https://pac8.vercel.app",
