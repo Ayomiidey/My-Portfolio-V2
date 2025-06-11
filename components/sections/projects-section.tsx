@@ -33,25 +33,26 @@ const projects = [
     live: "https://restockr.vercel.app",
     featured: true,
   },
+
   {
     id: 3,
+    title: "Fam 8",
+    description:
+      "A modern farming investment platform empowering users to fund crops and livestock, track tasks with live photo updates, and manage investments through an interactive calculator.",
+    image: "/images/fam8.png",
+    tags: ["Next.js", "Redux", "Prisma", "Neon PostgreSQL", "Serverless"],
+    category: "Fullstack",
+    github: "https://github.com/your-username/fam8",
+    live: "https://fam8.vercel.app",
+    featured: false,
+  },
+  {
+    id: 4,
     title: "Portfolio Website",
     description:
       "A modern, responsive portfolio website with smooth animations and dark mode support.",
     image: "/placeholder.svg?height=300&width=500",
     tags: ["Next.js", "Framer Motion", "Tailwind CSS"],
-    category: "Frontend",
-    github: "https://github.com",
-    live: "https://example.com",
-    featured: false,
-  },
-  {
-    id: 4,
-    title: "Weather Dashboard",
-    description:
-      "A beautiful weather dashboard with location-based forecasts and interactive charts.",
-    image: "/placeholder.svg?height=300&width=500",
-    tags: ["React", "Chart.js", "Weather API"],
     category: "Frontend",
     github: "https://github.com",
     live: "https://example.com",
