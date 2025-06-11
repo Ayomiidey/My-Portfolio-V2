@@ -9,13 +9,13 @@ import Image from "next/image";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce App",
+    title: "PAC 8",
     description:
       "A modern full-stack e-commerce application featuring product management, secure authentication, dynamic cart with Redux, and Stripe payment integration.",
     image: "/images/pac8.png",
     tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL", "Redux", "Prisma"],
     category: "Full Stack",
-    github: "https://github.com",
+    github: "https://github.com/Ayomiidey/PAC-8-V2",
     live: "https://pac8.vercel.app",
     featured: false,
   },
@@ -35,7 +35,7 @@ const projects = [
       "Blob",
     ],
     category: "Full Stack",
-    github: "https://github.com",
+    github: "https://github.com/Ayomiidey/Restockr",
     live: "https://restockr.vercel.app",
     featured: true,
   },
@@ -48,7 +48,7 @@ const projects = [
     image: "/images/fam8.png",
     tags: ["Next.js", "Redux", "Prisma", "Neon PostgreSQL", "Serverless"],
     category: "Fullstack",
-    github: "https://github.com/your-username/fam8",
+    github: "https://github.com/interface8/Plant-8",
     live: "https://fam8.vercel.app",
     featured: false,
   },
