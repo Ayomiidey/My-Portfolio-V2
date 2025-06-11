@@ -37,7 +37,7 @@ const projects = [
     category: "Full Stack",
     github: "https://github.com/Ayomiidey/Restockr",
     live: "https://restockr.vercel.app",
-    featured: true,
+    featured: false,
   },
 
   {
@@ -74,7 +74,7 @@ const projects = [
     category: "Backend",
     github: "https://github.com",
     live: "https://example.com",
-    featured: false,
+    featured: true,
   },
   {
     id: 6,
