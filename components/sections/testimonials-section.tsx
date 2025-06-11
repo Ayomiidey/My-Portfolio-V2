@@ -8,8 +8,8 @@ import Image from "next/image";
 const testimonials = [
   {
     id: 1,
-    name: "Aina Kolade",
-    role: "CEO, TechStart Inc.",
+    name: "Giwa Uthman",
+    role: "CEO, Interface-8.",
     content:
       "Quadri delivered an exceptional e-commerce platform that exceeded our expectations. His attention to detail and technical expertise made our project a huge success.",
     rating: 5,
@@ -17,7 +17,7 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "Michael Olumuyiwa",
+    name: "Aina Kolade",
     role: "Product Manager, InnovateCorp",
     content:
       "Working with Quadri was a pleasure. He understood our requirements perfectly and delivered a scalable solution on time and within budget.",
