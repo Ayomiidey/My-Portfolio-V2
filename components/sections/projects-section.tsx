@@ -23,11 +23,19 @@ const projects = [
   },
   {
     id: 2,
-    title: "Smart Inventory App",
+    title: "Smart Inventory Manager",
     description:
-      "A collaborative task management application with real-time updates and team collaboration features.",
+      "A full-stack inventory management application featuring product, category, and supplier CRUD operations, real-time analytics, image uploads, and secure authentication. Includes an admin dashboard with responsive tables and CSV export functionality.",
     image: "/images/restockr.png",
-    tags: ["NextJs", "PostgreSQL", "Blob", "Prisma"],
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "NextAuth",
+      "Tailwind",
+      "Blob",
+    ],
     category: "Full Stack",
     github: "https://github.com",
     live: "https://restockr.vercel.app",
