@@ -96,7 +96,7 @@ const projects = [
     id: 6,
     title: "Portfolio Website",
     description:
-      "A modern, responsive portfolio website with smooth animations and dark mode support.",
+      "A modern, responsive personal portfolio website designed to showcase projects, skills, and experience. It features smooth animations, interactive UI elements, dark mode support, and optimized performance for both desktop and mobile devices. The site also integrates project highlights, contact forms, and a clean, minimalistic design to create a professional online presence.",
     image: "/images/portfolio.png",
     tags: ["Next.js", "Framer Motion", "Tailwind CSS"],
     category: "Frontend",
