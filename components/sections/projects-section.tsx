@@ -9,18 +9,58 @@ import Image from "next/image";
 const projects = [
   {
     id: 1,
-    title: "PAC 8",
+    title: "Souvenir Hub",
     description:
-      "A modern full-stack e-commerce application featuring product management, secure authentication, dynamic cart with Redux, and Stripe payment integration.",
-    image: "/images/pac8.png",
-    tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL", "Redux", "Prisma"],
-    category: "Full Stack",
-    github: "https://github.com/Ayomiidey/PAC-8-V2",
-    live: "https://pac8.vercel.app",
+      "A fullstack e-commerce app designed for people across the globe to effortlessly shop for unique souvenirs. Users can browse a variety of souvenirs, customize them with personalized printing service within their location, and purchase with ease, while sellers manage listings through a user-friendly dashboard.",
+    image: "/images/souvenirhub.png",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Redux",
+      "Prisma",
+      "Tailwind CSS",
+    ],
+    category: "Fullstack",
+    github: "https://github.com/Ayomiidey/Souvenir-Hub",
+    live: "https://souvenir-hub.vercel.app",
     featured: false,
   },
   {
     id: 2,
+    title: "Study Abroad Consultancy",
+    description:
+      "A professional, modern website built for a study-abroad consultancy that specializes in guiding students through successful applications to UK universities. The platform offers personalized counselling, university & course search, document checklist and uploads, application tracking, appointment booking, and a client dashboard for progress updates — all backed by a secure admin panel for managing clients, universities, and communications.",
+    image: "/images/study-abroad-consultancy.png",
+    tags: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Axios",
+      "Yup",
+      "MongoDB",
+      "Cloudinary",
+      "Multer",
+    ],
+    category: "Frontend",
+    github: "",
+    live: "https://uk-master-class-project.vercel.app",
+    featured: true,
+  },
+  {
+    id: 3,
+    title: "Fam 8",
+    description:
+      "A modern farming investment platform empowering users to fund crops and livestock, track tasks with live photo updates, and manage investments through an interactive calculator.",
+    image: "/images/fam8.png",
+    tags: ["Next.js", "Redux", "Prisma", "Neon PostgreSQL", "Serverless"],
+    category: "Fullstack",
+    github: "https://github.com/interface8/Plant-8",
+    live: "https://fam8.vercel.app",
+    featured: false,
+  },
+  {
+    id: 4,
     title: "Smart Inventory Manager",
     description:
       "A full-stack inventory management application featuring product, category, and supplier CRUD operations, real-time analytics, image uploads, and secure authentication. Includes an admin dashboard with responsive tables and CSV export functionality.",
@@ -39,25 +79,25 @@ const projects = [
     live: "https://restockr.vercel.app",
     featured: false,
   },
-
   {
-    id: 3,
-    title: "Fam 8",
+    id: 5,
+    title: "PAC 8",
     description:
-      "A modern farming investment platform empowering users to fund crops and livestock, track tasks with live photo updates, and manage investments through an interactive calculator.",
-    image: "/images/fam8.png",
-    tags: ["Next.js", "Redux", "Prisma", "Neon PostgreSQL", "Serverless"],
-    category: "Fullstack",
-    github: "https://github.com/interface8/Plant-8",
-    live: "https://fam8.vercel.app",
+      "A modern full-stack e-commerce application featuring product management, secure authentication, dynamic cart with Redux, and Stripe payment integration.",
+    image: "/images/pac8.png",
+    tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL", "Redux", "Prisma"],
+    category: "Full Stack",
+    github: "https://github.com/Ayomiidey/PAC-8-V2",
+    live: "https://pac8.vercel.app",
     featured: false,
   },
+
   {
-    id: 4,
+    id: 6,
     title: "Portfolio Website",
     description:
       "A modern, responsive portfolio website with smooth animations and dark mode support.",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/images/portfolio.png",
     tags: ["Next.js", "Framer Motion", "Tailwind CSS"],
     category: "Frontend",
     github: "https://github.com",
@@ -65,29 +105,29 @@ const projects = [
     featured: false,
   },
   {
-    id: 5,
+    id: 7,
     title: "REST API Service",
     description:
       "A scalable REST API service with authentication, rate limiting, and comprehensive documentation.",
     image: "/placeholder.svg?height=300&width=500",
     tags: ["Node.js", "Express", "JWT", "Swagger"],
     category: "Backend",
-    github: "https://github.com",
-    live: "https://example.com",
+    github: "",
+    live: "",
     featured: true,
   },
-  {
-    id: 6,
-    title: "Mobile App UI",
-    description:
-      "A modern mobile app interface design with intuitive user experience and micro-interactions.",
-    image: "/placeholder.svg?height=300&width=500",
-    tags: ["Figma", "Prototyping", "UI/UX"],
-    category: "Design",
-    github: "https://github.com",
-    live: "https://example.com",
-    featured: false,
-  },
+  // {
+  //   id: 8,
+  //   title: "Mobile App UI",
+  //   description:
+  //     "A modern mobile app interface design with intuitive user experience and micro-interactions.",
+  //   image: "/placeholder.svg?height=300&width=500",
+  //   tags: ["Figma", "Prototyping", "UI/UX"],
+  //   category: "Design",
+  //   github: "https://github.com",
+  //   live: "https://example.com",
+  //   featured: false,
+  // },
 ];
 
 const categories = [
@@ -96,7 +136,7 @@ const categories = [
   "Full Stack",
   "Frontend",
   "Backend",
-  "Design",
+  // "Design",
 ];
 
 export function ProjectsSection() {
@@ -132,7 +172,6 @@ export function ProjectsSection() {
             and learning experience.
           </p>
 
-          {/* Category Filter */}
           <div className="flex flex-wrap justify-center gap-2 mb-8">
             {categories.map((category) => (
               <Button
@@ -161,7 +200,6 @@ export function ProjectsSection() {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
           >
-            {/* Projects Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredProjects.map((project, index) => (
                 <motion.div
@@ -175,7 +213,6 @@ export function ProjectsSection() {
                   onMouseEnter={() => setHoveredProject(project.id)}
                   onMouseLeave={() => setHoveredProject(null)}
                 >
-                  {/* Featured Badge */}
                   {project.featured && (
                     <div className="absolute top-4 left-4 z-10">
                       <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
@@ -185,7 +222,6 @@ export function ProjectsSection() {
                     </div>
                   )}
 
-                  {/* Project Image */}
                   <div className="relative h-48 overflow-hidden">
                     <Image
                       src={project.image || "/placeholder.svg"}
@@ -198,7 +234,6 @@ export function ProjectsSection() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                    {/* Action Buttons */}
                     <div
                       className={`absolute top-4 right-4 flex gap-2 transition-all duration-300 ${
                         hoveredProject === project.id
@@ -225,7 +260,6 @@ export function ProjectsSection() {
                     </div>
                   </div>
 
-                  {/* Project Content */}
                   <div className="p-6">
                     <div className="flex items-start justify-between mb-3">
                       <h3 className="font-bold text-xl text-slate-900 dark:text-white group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors duration-200">
@@ -238,7 +272,6 @@ export function ProjectsSection() {
                       {project.description}
                     </p>
 
-                    {/* Tags */}
                     <div className="flex flex-wrap gap-2">
                       {project.tags.map((tag) => (
                         <span
@@ -251,7 +284,6 @@ export function ProjectsSection() {
                     </div>
                   </div>
 
-                  {/* Bottom Action Bar */}
                   <div className="px-6 pb-6">
                     <div className="flex gap-3">
                       <a
@@ -278,7 +310,6 @@ export function ProjectsSection() {
               ))}
             </div>
 
-            {/* Empty State */}
             {filteredProjects.length === 0 && (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
