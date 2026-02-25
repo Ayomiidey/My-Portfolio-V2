@@ -237,8 +237,8 @@ export function ProjectsSection() {
                     <div
                       className={`absolute top-4 right-4 flex gap-2 transition-all duration-300 ${
                         hoveredProject === project.id
-                          ? "opacity-100 translate-y-0"
-                          : "opacity-0 -translate-y-2"
+                          ? "opacity-100 translate-y-0 pointer-events-auto"
+                          : "opacity-0 -translate-y-2 pointer-events-none"
                       }`}
                     >
                       <a
@@ -284,13 +284,14 @@ export function ProjectsSection() {
                     </div>
                   </div>
 
-                  <div className="px-6 pb-6">
+                  <div className="px-6 pb-6 pointer-events-auto">
                     <div className="flex gap-3">
                       <a
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex-1 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-300 px-4 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2 group/link"
+                        className="flex-1 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-300 px-4 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2 group/link touch-manipulation"
+                        onClick={(e) => e.stopPropagation()}
                       >
                         <Github className="w-4 h-4 group-hover/link:rotate-12 transition-transform duration-200" />
                         Code
@@ -299,7 +300,8 @@ export function ProjectsSection() {
                         href={project.live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex-1 bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 flex items-center justify-center gap-2 group/link"
+                        className="flex-1 bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 flex items-center justify-center gap-2 group/link touch-manipulation"
+                        onClick={(e) => e.stopPropagation()}
                       >
                         <ExternalLink className="w-4 h-4 group-hover/link:rotate-12 transition-transform duration-200" />
                         Live Demo
